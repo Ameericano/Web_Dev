@@ -92,3 +92,19 @@ h3, p {
    color: steelblue;
 }
 
+table, tr, th, td {
+	    
+      border: 2px solid blue;
+      border-collapse: collapse;
+     }
+
+th {
+      color: white;
+      background-color: cadetblue;
+}
+tr, th {
+	 height: 50px;
+	 text-align: center; /*horizontally*/
+	 vertical-align: center; /*vertically*/
+}
+
