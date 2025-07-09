@@ -98,6 +98,10 @@ table, tr, th, td {
       border-collapse: collapse;
      }
 
+td {
+  width: 500px;
+}
+
 th {
       color: white;
       background-color: cadetblue;
@@ -106,6 +110,18 @@ tr, th {
 	 height: 50px;
 	 text-align: center; /*horizontally*/
 	 vertical-align: center; /*vertically*/
+}
+
+img.Fan-1-Ad {
+    width: 300px;
+}
+
+img.Fan-2-Ad {
+    width: 300px;
+}
+
+img.Fan-3-Ad {
+    width: 300px;
 }
 
 .container {
@@ -162,10 +178,36 @@ button {
   padding: 8px;
   border: none;
   font-size: 20pt;
-  align-self: center;
 }
 button:hover {
   transform: scale(1.2, 1.2);
   background-color: rgb(219, 85, 75);
   cursor: pointer;
+}
+
+div.about {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+    width: 80%;
+}
+
+.about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+div.image-about {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+img.about-us {
+    width: 300px;
 }
