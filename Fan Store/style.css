@@ -211,3 +211,58 @@ div.image-about {
 img.about-us {
     width: 300px;
 }
+
+footer {
+    background-image: linear-gradient(rgb(252, 
+  232, 204), rgb(197, 141, 137));
+}
+
+.main-footer { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-footer {
+    margin-right: auto; 
+    margin-left: 40px;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-left {
+    color: rgb(219, 84, 75);
+    text-align: left;
+    width: 100%;
+}
+
+.info-right {
+    color: rgb(219, 84, 75);
+    text-align: right;
+    width: 100%;
+}
+
+.info-center {
+    color: rgb(219, 84, 75);
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgb(146, 168, 133);
+}
+
+.fa-map-marked-alt, .fa-map-pin, .fa-address-book, .fa-phone-alt, .fa-instagram {
+    margin: 6px;
+}
+
+.fa-map-marked-alt, .fa-map-pin, .fa-address-book, .fa-phone-alt, .fa-instagram {
+    margin: 6px;
+    color: rgb(219, 85, 75);
+}
