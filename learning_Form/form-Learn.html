@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h3 class="title">Coding Competition <br> Enrollment 2025</h3>
+        <form action="result_Learn.html" target="blank" method="get" autocomplete="on">
+            <!-- <label for="name">Name</label> -->
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <!-- <label for="address">Address</label> -->
+            <textarea id="address" name="address" cols="30" rows="10" placeholder="Your Address" required></textarea>
+            <!-- <label for="phone">Phone</label> -->
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <!-- <label for="password">Password</label> -->
+            <input type="password" id="password" name="password" placeholder="Your Password" required>
+            <!-- <label for="age">Age</label> -->
+            <input type="number" min="8" max="16" id="age" name="age" placeholder="Your Age" required>
+            <label for="category">Competition Category:</label><br>
+            <select name="category" id="category" required autofocus>
+                <option value="kids">Kids (8-10 y)</option>
+                <option value="teens">Teens (11-13 y)</option>
+                <option value="high-school">High School (14-16 y)</option>
+                <option value="adult">Adult (17-21 y)</option>
+            </select><br>
+            <label for="birth-date">Birth Date</label>
+            <input type="date" id="birth-date" name="birth-date" min="2009-01-01" max="2017-01-01" required>
+            <label for="radio">Gender</label><br>
+            <input type="radio" id="gender1" name="gender" value="male" class="check" required>
+            <label for="gender">Male</label><br>
+            <input type="radio" id="gender2" name="gender" value="female" class="check" required>
+            <label for="gender">Female</label><br>
+            <label for="documents">Documents</label><br>
+            <input type="checkbox" id="checkbox" name="checkbox1" value="student-card" class="check" required>
+            <label for="checkbox">Student Card</label><br>
+            <input type="checkbox" id="checkbox" name="checkbox2" value="biodata" class="check" required>
+            <label for="checkbox">Biodata</label><br>
+            <input type="checkbox" id="checkbox" name="checkbox3" value="contract-form" class="check" required>
+            <label for="checkbox">Contract Form</label><br>
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" multiple required>
+            <input type="submit" value="Submit" class="submit-btn" required>
+        </form>
+    </div>
+</body>
+</html>
