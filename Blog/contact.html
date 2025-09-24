@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://kit.fontawesome.com/7075192551.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <img
-            src= "assets/header-icon.png"
-            alt = "header-icon"
-            class= "header-icon"
-        >
-        <script src="script.js"></script>
-        <header>
-            <div class="header">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/7075192551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="header">
                 <img
                     class = "header-icon"
                     src = "assets/header-icon.png"
@@ -29,10 +24,9 @@
                     <a href="about.html">About Us</a>
                 </nav>
             </div>
-        </header>
-
-        <main>
-            <section id="jumbotron">
+    </header>
+    <main>
+        <section id="jumbotron">
                 <div class="jumbotron">
                     <h1 class="jumbotron-title">Get Programmer Tips Here!</h1>
                     <div class="header-flex">
@@ -114,9 +108,61 @@
                 </select><br>
                 <input type="submit"></h1>
             </info>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+    </main>
+    <footer>
+        <div class="contact-container">
+            <div class="ilustration">
+                <img class="illustration-img" src="assets/undraw_voice-assistant_k27k.png" alt="" width="800px">
+            </div>
+            <div class="contact">
+                <img class="profile-contact-img" src="assets/undraw_finance-guy-avatar_vhop.png" alt="">
+                <h1>Contact Me</h1>
+                <p>Please feel free to contact me</p>
+                <h4>Your Information</h4>
+                <form action="contact.html" autocomplete="off">
+                    <div class="form-container">
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="name" id="name" placeholder="">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="city" id="city" placeholder="">
+                                <label for="city" class="form-label">City</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="email" id="email" placeholder="">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                        </div>
+                        <div class="textarea-container">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-textarea">
+                                <textarea class="textarea" type="text" name="message" id="message" cols="52" rows="8" placeholder=""></textarea>
+                                <label for="message" class="form-label">Message</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
