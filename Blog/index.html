@@ -1,122 +1,77 @@
-<html><head>
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script><style media="all" id="fa-v4-font-face"></style>
-<body>
-
-    <main>
-
-        <section id="slider" class="section-slider"> 
-  <div class="image-slider">
-    <div class="slide active">
-      <img src="assets/game-development.jpg" alt="">
-      <div class="slide-text">
-        <h2>Game Development</h2>
-        <p>Instead of playing game all day long, why 
-           not create your own?</p>
-      </div>
-    </div>
-
-    <!-- Copy paste the div class slide above (without
-     active word) until there are 5 div -->
-
-    <div class="navigation">
-      <div class="slider-btn active"></div>
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
-    </div>
-  </div>
-</section>
-
-        <div class="contact-container">
-
-            <div class="ilustration">
-                <img class="illustration-img" src="assets/undraw_voice-assistant_k27k.png" alt="" width="800px">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/7075192551.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <img
+            src= "assets/header-icon.png"
+            alt = "header-icon"
+            class= "header-icon"
+        >
+        <script src="script.js"></script>
+        <header>
+            <div class="header">
+                <img
+                    class = "header-icon"
+                    src = "assets/header-icon.png"
+                    alt= "header-icon"
+                >
+                <h3 class = "title">
+                    <a href="index.html">Cobee The Coder</a>
+                </h3>
+                <nav>
+                    <a href="project.html">Project</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
+                </nav>
             </div>
+        </header>
 
-            <div class="contact">
-
-                <img class="profile-contact-img" src="assets/undraw_finance-guy-avatar_vhop.png" alt="">
-                <h1>Contact Me</h1>
-                <p>Please feel free to contact me</p>
-                <h4>Your Information</h4>
-
-                <form action="https://formsubmit.co/ameerakmal2020@gmail.com" autocomplete="off" method="POST">
-
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" class="next">
-
-                    <div class="form-container">
-
-                        <!-- Input Name Column -->
-                        <div class="input-container">
-                            <div class="icon">
-                                <i class="fas fa-user" aria-hidden="true"></i>
-                            </div>
-                            <div class="form-input">
-                                <input class="input-item" type="text" name="name" id="name" placeholder="">
-                                <label for="name" class="form-label">Name</label>
+        <main>
+            <section id="jumbotron">
+                <div class="jumbotron">
+                    <h1 class="jumbotron-title">Get Programmer Tips Here!</h1>
+                    <div class="header-flex">
+                        <div>
+                            <h2 class="jumbotron-text">New to the Programming World? <br> Let's Start with Creating Simple <span style="color: #f4a261;">Game and Website</span></h2>
+                            <div class="mini-text-flex">
+                                <p class="mini-text">Learn Basic Programming Here</p>
+                                <button id = "icon-up" onclick = "changeText()">
+                                    <i class="fa-solid fa-hand-point-up"></i>
+                                </button>
+                                <button id = "icon-down" class = "icon-down">
+                                    <i class="fa-solid fa-hand-point-down"></i>
+                                </button>
                             </div>
                         </div>
-
-                        <!-- Input City Column -->
-                        <div class="input-container">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="form-input">
-                                <input class="input-item" type="text" name="city" id="city" placeholder="">
-                                <label for="city" class="form-label">City</label>
-                            </div>
+                        <div>
+                            <img
+                                class="jumbotron-img"
+                                src = "assets/img-header.png"
+                                alt= "img-header"
+                                width="auto"
+                                height="300"
+                            >
                         </div>
-
-                        <!-- Input Email Column -->
-                        <div class="input-container">
-                            <div class="icon">
-                                <i class="far fa-envelope-open" aria-hidden="true"></i>
-                            </div>
-                            <div class="form-input">
-                                <input class="input-item" type="text" name="email" id="email" placeholder="">
-                                <label for="email" class="form-label">Email</label>
-                            </div>
-                        </div>
-
-                        <!-- Input Message Column -->
-                        <div class="textarea-container">
-                            <div class="icon">
-                                <i class="fas fa-comment" aria-hidden="true"></i>
-                            </div>
-                            <div class="form-textarea">
-                                <textarea class="textarea" type="text" name="message" id="message" cols="52" rows="8" placeholder=""></textarea>
-                                <label for="message" class="form-label">Message</label>
-                            </div>
-                        </div>
-
                     </div>
+                </div>
+            </section>
+            
+            <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#7c8d94" fill-opacity="1"
+                d="M0, 96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffff" fill-opacity="1"
+                d="M0, 96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+        </main>
+        <footer>
 
-                    <input type="submit" value="Submit" class="submit">
-
-                </form>
-
-            </div>
-
-        </div>
-
-        <div class="modal-container">
-            <div class="modal">
-                <img src="assets/message-sent.jpg" alt="">
-                <h3>Message Sent</h3>
-                <p>Thank you for submitting!</p>
-            </div>
-        </div>
-
-    </main>
-
-    <script src="script.js"></script>
-
-
-
-</body>
-</html>
+        </footer>
+    </body>
