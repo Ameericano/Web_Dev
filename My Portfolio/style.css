@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(22, 21, 21);
+}
+
+.title {
+    color: beige;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.pfp {
+    display: inline-block;
+    width: 190px;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 5%;
+    transition: 0.3s ease; 
+
+}
+
+.pfp:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px red;   
+}
+
+.pfp_name {
+    color: beige;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.WIP {
+    color: beige;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 300px;
+}
