@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-    <body>
-        <header>
-            <div class="main-header">
-                <h3 class="header-info">
-                    <a href="portfolio.html">Home Page</a>
-                </h3>
-                <nav>
-                    <a href="">Nav 1</a>
-                    <a href="">Nav 2</a>
-                    <a href="">Nav 3</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section id="jumbotron">
-                <div class="jumbotron">
-                    <div>
-                        <img class="front-page-art" src="assets/front-page-art.jpg" alt="Art Should Be Here" width="100vw" height="100vh"
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <h3 class="header-info">
+          <a href="portfolio.html">Home Page</a>
+        </h3>
+        <nav>
+          <a href="">Nav 1</a>
+          <a href="">Nav 2</a>
+          <a href="">Nav 3</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h3 class="title">Programmer and Designer</h3>
+        </div>
+      </section>
+    </main>
+    <img src="assets/front-page-art.jpg">
+    <script>
+      const jumbotron = document.querySelector(".jumbotron");
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const maxScroll = 400; // adjust for how fast it fades
+
+        // Calculate opacity: 1 → fully visible, 0 → fully faded
+        const opacity = Math.max(1 - scrollY / maxScroll, 0);
+
+        // Apply opacity to the jumbotron
+        jumbotron.style.opacity = opacity;
+      });
+    </script>
+  </body>
 </html>

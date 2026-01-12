@@ -1,68 +1,68 @@
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
 }
 
 .title {
-    color: rgb(0, 0, 0);
-    font-size: 80px;
-    text-align: center;
-    margin-top: 80px;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .pfp {
-    display: inline-block;
-    width: 190px;
-    height: auto;
-    position: relative;
-    margin-top: 30px;
-    border-radius: 5%;
-    transition: 0.3s ease; 
-
+  display: inline-block;
+  width: 190px;
+  height: auto;
+  position: relative;
+  margin-top: 30px;
+  border-radius: 5%;
+  transition: 0.3s ease;
 }
 
 .pfp:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 30px red;   
+  transform: scale(1.05);
+  box-shadow: 0 0 30px red;
 }
 
 .pfp_name {
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    text-align: center;
-    margin-top: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .main-header {
-   background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-   position: fixed;
-   top: 0;
-   right: 0; 
-   left: 0;
-   height: 48px;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 21px;
+  z-index: 1000; /* ensure it stays on top of jumbotron */
+  background: transparent;
 }
+
 .header-info {
-   text-align: left;
-   background-color: rgb(0, 0, 0);
-   position: absolute;
-   margin-left: 20px;
-   margin-top: 10px;
+  text-align: left;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 .header-info a {
-   padding: 0;
-   text-decoration: none;
-   color: beige;
+    padding: 0;
+    text-decoration: none;
+    color: beige;
 }
 .header-info a:hover {
-   color: bisque;
-   background-color: gray;
+  color: bisque;
 }
 
 nav {
@@ -72,20 +72,64 @@ nav {
 }
 
 a {
+  position: relative;
   text-decoration: none;
   color: beige;
   padding: 15px;
   float: left;
+  line-height: 1.2;
 }
 
-.main-header a:hover {
-  background-color: gray;
+a::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 4px;
+
+  height: 2px;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
 }
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+
 
 .front-page-art {
-    width: 100%;
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  display: block;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("assets/front-page-art.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: background 0.5s ease, opacity 0.5s ease;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  z-index: 1;
 }
