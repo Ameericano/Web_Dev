@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
 }
@@ -46,7 +46,7 @@ body {
   height: 48px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 21px;
-  z-index: 1000; /* ensure it stays on top of jumbotron */
+  z-index: 1000; 
   background: transparent;
 }
 
@@ -110,16 +110,19 @@ a:hover::after {
 }
 
 .jumbotron {
-  position: relative;
+  position: fixed;      
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
 
+  background-color: black;
   background-image: url("assets/front-page-art.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  transition: background 0.5s ease, opacity 0.5s ease;
+  z-index: -1;          
 }
 
 .title {
@@ -133,3 +136,205 @@ a:hover::after {
   margin: 0;
   z-index: 1;
 }
+
+.main-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8vw;
+  color: #f5f0e8;
+  z-index: 2;
+}
+
+.main-left h1 {
+  font-size: 108px;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.main-right {
+  max-width: 420px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.main-right p {
+  margin-bottom: 24px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid #f5f0e8;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #f5f0e8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #f5f0e8;
+  color: #000;
+}
+
+.about-section {
+  position: relative;
+  z-index: 5;             
+  background-color: #111; 
+  color: #fff;
+  padding: 120px 8vw;
+  margin-top: 100vh;      
+}
+
+.about-container {
+  max-width: 1100px;      
+  margin: 0 auto;
+}
+
+.about-header {
+  margin-bottom: 60px;
+}
+
+.title-large {
+  font-size: clamp(60px, 10vw, 120px); 
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: 0.8px;
+  margin: 0;
+  font-family: 'Impact', 'Arial Narrow Bold', sans-serif; 
+}
+
+.title-sub {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 10px;
+  color: #888;
+}
+
+.about-description p {
+  font-size: 39px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase; 
+  word-spacing: 2px;
+  color: #e0e0e0;
+}
+
+.highlight {
+  color: #FFD700;
+}
+
+.slider-section {
+  position: relative;
+  z-index: 6;
+  padding: 100px 0;
+  background: transparent; /* Allows jumbotron to show through */
+  text-align: center;
+  padding-top: 200px;
+}
+
+.slider-title {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider-wrapper {
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+  /* Modern Border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 60px;   /* Fixed width for a perfect circle */
+  height: 60px;  /* Fixed height for a perfect circle */
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.nav-btn:hover {
+  background: #FFD700; /* Matching your yellow theme */
+  color: black;
+  border-color: #FFD700;
+  transform: scale(1.1);
+}
+
+.video-section {
+  position: relative;
+  z-index: 7;
+  background-color: #000; /* Solid background stops the fading effect */
+  padding: 100px 8vw;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 20px;
+}
+
+.video-card {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-card iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

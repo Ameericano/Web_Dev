@@ -22,24 +22,103 @@
     <main>
       <section id="jumbotron">
         <div class="jumbotron">
-          <h3 class="title">Programmer and Designer</h3>
+          <div class="main-content">
+            <div class="main-left">
+              <h1>
+                DESIGNER<br />
+                &<br />
+                DEVELOPER
+              </h1>
+            </div>
+
+            <div class="main-right">
+              <p>
+                I AM A DEVELOPER BASED IN MALAYSIA. I HAVE MANY MONTHS OF
+                EXPERIENCE IN ALL AREAS OF DIGITAL. I LOVE MINIMALIST DESIGNS. I
+                ALSO LOVE NATURE, NASI LEMAK AND CODING.
+              </p>
+
+              <a href="#" class="contact-btn">CONTACT ME</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-header">
+            <h2 class="title-large">
+              HELLO, I AM <span class="highlight">AMEER</span>!
+            </h2>
+            <span class="title-sub">AMEER AKMAL BIN KAMARUDDIN</span>
+          </div>
+
+          <div class="about-description">
+            <p>
+              I USE MY PASSION AND SKILLS TO CREATE PROJECTS AND I USUALLY HAVE
+              NOTHING GOIG ON IN MY LIFE. I LOVE PLAYING GAMES DURING MY FREE
+              TIME OR STUDYING MY UPCOMING SPM. I HOPE TO BECOME A PROGRAMMER
+              WHEN I GRADUATE FROM HIGH SCHOOL.
+              <br>
+              <br>
+              FROM HERE, THIS WEBSITE WILL ABOUT MY PERSONAL LIFE AS I HAVE NO
+              PROFESSIONAL EXPERIENCE!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="slider-section">
+        <h2 class="slider-title">MY GALLERY</h2>
+
+        <div class="slider-container">
+          <button id="prevBtn" class="nav-btn">&#10229;</button>
+
+          <div class="slider-wrapper">
+            <div class="slider-track">
+              <div class="slide">
+                <img src="assets/my-courses.png" alt="1" />
+              </div>
+              <div class="slide">
+                <img src="assets/my-projects.png" alt="2" />
+              </div>
+              <div class="slide">
+                <img src="assets/my-progress.png" alt="3" />
+              </div>
+            </div>
+          </div>
+
+          <button id="nextBtn" class="nav-btn">&#10230;</button>
+        </div>
+      </section>
+      <section class="video-section">
+        <div class="container">
+          <h2 class="section-title">MY PLAYLIST!</h2>
+          <div class="video-grid">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/BokpaBxVAjw"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/9kzE8isXlQY"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/lTRiuFIWV54"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <img src="assets/front-page-art.jpg">
-    <script>
-      const jumbotron = document.querySelector(".jumbotron");
 
-      window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        const maxScroll = 400; // adjust for how fast it fades
-
-        // Calculate opacity: 1 → fully visible, 0 → fully faded
-        const opacity = Math.max(1 - scrollY / maxScroll, 0);
-
-        // Apply opacity to the jumbotron
-        jumbotron.style.opacity = opacity;
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
